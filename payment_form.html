@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="style_payment_form.css">
+    
+</head>
+<body>
+    <form action="" class="container">
+        <h1>Payment Form</h1>
+        <h2>Contact Info.</h2>
+        <p>Name:* <input type="text" name="name" required placeholder="Pankaj Tripathi"></p>
+        <fieldset>
+            <legend>Gender*</legend>
+            <p>
+                Male <input type="radio" name="gender" id="male" required>
+                Female <input type="radio" name="gender" id="female" required>
+            </p>
+        </fieldset>
+        <p>Address: <textarea name="address" id="address" cols="100" rows="8" placeholder="Enter your Address"></textarea></p>
+        <p>Email:* <input type="email" placeholder="arun123@gmail.com" name="email" id="email" required></p>
+        <p>Pincode:* <input type="number" placeholder="123456" name="pincode" id="pincode" required></p>
+        <p>Mobile NO:* <input type="number" placeholder="9999999999" name="mobilenum" id="mobilenum" required></p>
+        <hr>
+        <h2>Payment Information</h2>
+        <p>Card Type:* 
+            <select name="card_type" id="card_type" required>
+                <option value="">--Select a card type--</option>
+                <option value="visa">Visa</option>
+                <option value="mastercard">Mastercard</option>
+                <option value="rupay">Rupay</option>
+            </select>
+        </p>
+        <p>
+            Card Number:* <input type="number" placeholder="1111-2222-3333-4444" name="card_number" id="card_number" required>
+        </p>
+        <p>
+            Expiration Date:* <input type="date"  name="exp_date" id="exp_date" required>
+        </p>
+        <p>CVV:* <input type="password" placeholder="123" name="cvv" id="cvv" required></p>
+        <input type="submit" value="Pay Now">
+        <hr>
+        <p class="required">Requires fields are followed by *</p>
+    </form>
+</body>
+</html>
